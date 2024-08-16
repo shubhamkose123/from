@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="w!idth=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="backend.php">
+        <div>
+            <label for="email">Enter Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+        </div>
+
+        <div>
+            <label for="Eligible">Are you eligible ?</label>
+            <input type="checkbox" name="eligible" id="Eligible">
+        </div>
+        <div>
+            <!-- Checkbox -->
+            <label for="Hobby">Hobby</label> <br>
+            <input type="checkbox" value="dancing" checked>dancing
+            <input type="checkbox" value="singing">singing
+            <input type="checkbox" value="sports">sports
+
+        </div>
+        <div>
+            <!-- Enter Gender -->
+            <label for="Gender">Gender</label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other
+        </div>
+        <div>
+            <!-- Enter Age -->
+            <label for="age">Enter Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- Date Of Birth -->
+        <div>
+            <label for="dob">Enter Your Date Of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <!-- Color -->
+        <input type="color">
+        <br>
+        <!-- File Chosen -->
+        <input type="file">
+        <div>
+            <!-- Feedback -->
+            <label for="msg">Message</label><br>
+            <textarea id="msg" cols="10" role="5"></textarea>
+        </div>
+        <!-- List Select -->
+        <div>
+            <label for="course">Course</label>
+            <select id="course">
+                <option value="select">Select</option>
+                <option value="frontent">Frontent</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </select>
+        </div>
+        <!--one word select to all word show  -->
+        <div>
+            <label for="brands">Select Brand</label>
+            <input type="text" id="brands" list="animals">
+            <datalist id="animals">
+                <option value="lion"></option>
+                <option value="element"></option>
+                <option value="monkey"></option>
+                <option value="tiger"></option>
+            </datalist>
+        </div>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        <!-- Reset Button -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
